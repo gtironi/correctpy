@@ -1,2 +1,0 @@
-content = None
-e = None
