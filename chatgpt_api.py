@@ -19,3 +19,6 @@ def generate_response(code, error):
 
     return response
 
+def extract_python_code(text):
+    pattern = r'```python(.*?)```'
+    python_code = re.search(pattern, text, re.DOTALL).group(1).strip()
