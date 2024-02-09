@@ -1,12 +1,12 @@
 ### Prompt
 
-content, e = None, None
+code, e = None, None
 
-prompt = f'''
+prompt_template = f'''
 I am coding. It is a Python script, and it is not running. It has one or multiple errors. I will give you the code and the traceback. You should correct all the errors that you find, not just the traceback. Correct the errors in the provided Python script without looking at the traceback first, then look at the traceback and see if you have already corrected it. 
 
 Code: 
-'{content}'
+'{code}'
 
 Traceback: '{e}'
 
