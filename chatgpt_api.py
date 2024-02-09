@@ -3,6 +3,8 @@ import openai
 import re
 from samples_and_prompt import prompt_template, sample_response
 
+# openai.api_key = "SUA_API_KEY"
+
 def generate_response(code, error):
     code = code
     e = error
@@ -22,3 +24,4 @@ def generate_response(code, error):
 def extract_python_code(text):
     pattern = r'```python(.*?)```'
     python_code = re.search(pattern, text, re.DOTALL).group(1).strip()
+    return python_code

@@ -6,8 +6,6 @@ import time
 import chatgpt_api as api
 import reading as rd
 
-# openai.api_key = "SUA_API_KEY"
-
 f = StringIO()
 
 def teste(slow_mode = True):
@@ -29,7 +27,8 @@ def teste(slow_mode = True):
         if slow_mode: #delay
             time.sleep(2)
         answer = api.generate_response(original_code, e)
-        corrected_code = api.extract_corrected_code(answer)
+        corrected_code = api.extract_python_code(answer)
+        print(corrected_code)
 
         try:
             with redirect_stdout(f):
