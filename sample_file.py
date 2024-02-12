@@ -1,13 +1,12 @@
 import main
 import urllib.request, urllib.parse, urllib.error
 import json
-import ssl
 
 api_key = 42
 serviceurl = 'http://py4e-data.dr-chuck.net/json?'
 
 # Ignore SSL certificate errors
-ctx = create_default_context()
+ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 

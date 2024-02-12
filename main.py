@@ -28,8 +28,6 @@ def teste(slow_mode = True):
             time.sleep(2)
         answer = api.generate_response(original_code, e)
         corrected_code = api.extract_python_code(answer)
-        print(corrected_code)
-
         try:
             with redirect_stdout(f):
                 exec(corrected_code) 
