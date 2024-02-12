@@ -1,8 +1,10 @@
 
 import openai
-import sys
-import os
 import re
+import os
+import sys
+sys.path.append(f'{os.getcwd()}')
+
 from samples_and_prompt import prompt_template, sample_response
 
 OPENAI_API = "YOUR_API_KEY" #define your API KEY here

@@ -1,6 +1,7 @@
-import inspect
-import sys
 import re
+import sys
+import os
+sys.path.append(f'{os.getcwd()}')
 
 def read_file_executed():
     file = open(sys.argv[0], mode='r') #open the file
