@@ -3,7 +3,7 @@ from io import StringIO
 import inspect
 from contextlib import redirect_stdout
 import time
-from correctpy import read_file_executed, remove_func_from_code, extract_python_code, generate_response
+from correctpy_modules import read_file_executed, remove_func_from_code, extract_python_code, generate_response
 
 f = StringIO()
 

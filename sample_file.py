@@ -1,4 +1,4 @@
-import main
+import correctpy
 import urllib.request, urllib.parse, urllib.error
 import json
 
